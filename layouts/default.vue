@@ -13,4 +13,11 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+  background: $blue-6;
+  section {
+    padding: 20px;
+  }
+}
+</style>

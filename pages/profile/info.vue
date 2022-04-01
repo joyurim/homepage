@@ -1,5 +1,8 @@
 <template>
-  <section aside aria-label="기본정보">기본정보</section>
+  <section aside aria-label="기본정보" class="ProfileInfo">
+    <article>검색</article>
+    <article>리스트</article>
+  </section>
 </template>
 
 <script>

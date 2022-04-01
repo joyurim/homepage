@@ -1,7 +1,11 @@
 <template>
-  <nav>
-    <h1>ㅈㅇㄹ</h1>
-    <article v-for="nav in navBox" :key="`sidebar-nav-${nav.navId}`">
+  <nav class="nav">
+    <h1>로고</h1>
+    <article
+      v-for="nav in navBox"
+      :key="`sidebar-nav-${nav.navId}`"
+      class="mt-4"
+    >
       <h2 class="nav__title">{{ nav.navTitle }}</h2>
       <ul>
         <li
@@ -28,12 +32,12 @@ export default {
           gnbList: [
             {
               menuId: 'nav0001-1',
-              menuNm: '기본정보',
+              menuNm: 'Info',
               menuUrl: '/profile/info',
             },
             {
               menuId: 'nav0001-2',
-              menuNm: '경력사항',
+              menuNm: 'Career',
               menuUrl: '/profile/career',
             },
           ],
@@ -127,4 +131,15 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.nav {
+  min-width: 200px;
+  padding: 20px;
+  background: $bg-color;
+  &__title {
+    color: $primary;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
+</style>
