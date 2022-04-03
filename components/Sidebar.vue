@@ -60,23 +60,8 @@ export default {
             },
             {
               menuId: 'nav0002-3',
-              menuNm: 'TextField',
-              menuUrl: '/base/textField',
-            },
-            {
-              menuId: 'nav0002-4',
-              menuNm: 'Radio',
-              menuUrl: '/base/radio',
-            },
-            {
-              menuId: 'nav0002-5',
-              menuNm: 'Checkbox',
-              menuUrl: '/base/checkbox',
-            },
-            {
-              menuId: 'nav0002-6',
-              menuNm: 'Select',
-              menuUrl: '/base/select',
+              menuNm: 'Form',
+              menuUrl: '/base/form',
             },
           ],
         },
