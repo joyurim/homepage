@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <h1>로고</h1>
+    <h1 class="logo">ㅈㅇㄹ</h1>
     <article
       v-for="nav in navBox"
       :key="`sidebar-nav-${nav.navId}`"
@@ -138,6 +138,13 @@ export default {
   min-width: 230px;
   padding: 20px;
   background: $bg-color;
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border: 2px solid;
+    display: inline;
+  }
   &__title {
     color: $blue-1;
     font-size: 14px;
@@ -146,7 +153,7 @@ export default {
   &__list {
     &--menu {
       display: block;
-      padding-left: 12px;
+      padding: 3px 12px;
       font-size: 16px;
       border-left: 1px solid $blue-3;
       &.nuxt-link-active {
