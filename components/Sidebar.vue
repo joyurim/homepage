@@ -63,17 +63,22 @@ export default {
               menuNm: 'Form',
               menuUrl: '/base/form',
             },
+            {
+              menuId: 'nav0002-4',
+              menuNm: 'Button',
+              menuUrl: '/base/button',
+            },
           ],
         },
         {
           navId: 'nav0003',
           navTitle: 'Util Component',
           gnbList: [
-            {
-              menuId: 'nav0003-1',
-              menuNm: 'Accordian',
-              menuUrl: '/util/accordian',
-            },
+            // {
+            //   menuId: 'nav0003-1',
+            //   menuNm: 'Accordian',
+            //   menuUrl: '/util/accordian',
+            // },
             {
               menuId: 'nav0003-2',
               menuNm: 'Grid',
@@ -81,18 +86,8 @@ export default {
             },
             {
               menuId: 'nav0003-3',
-              menuNm: 'Picker',
-              menuUrl: '/util/picker',
-            },
-            {
-              menuId: 'nav0003-4',
               menuNm: 'Popup',
               menuUrl: '/util/popup',
-            },
-            {
-              menuId: 'nav0003-5',
-              menuNm: 'Etc',
-              menuUrl: '/util/etc',
             },
           ],
         },
