@@ -2,7 +2,7 @@
   <main class="flex flex-start h-screen">
     <Sidebar class="flex-none" />
     <div class="flex-1 h-full overflow-y-auto">
-      <Nuxt class="h-full" />
+      <Nuxt />
     </div>
   </main>
 </template>
@@ -17,7 +17,6 @@ export default {
 main {
   background: $blue-6;
   section {
-    height: 100%;
     padding: 40px 20px;
   }
 }
