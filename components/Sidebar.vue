@@ -140,13 +140,14 @@ export default {
   background: $bg-color;
   &__title {
     color: $blue-1;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
   }
   &__list {
     &--menu {
       display: block;
-      padding-left: 16px;
+      padding-left: 12px;
+      font-size: 16px;
       border-left: 1px solid $blue-3;
       &.nuxt-link-active {
         color: $primary;
