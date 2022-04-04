@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <h1 class="logo">ㅈㅇㄹ</h1>
+    <h1 class="logo"><nuxt-link to="/profile/info">ㅈㅇㄹ</nuxt-link></h1>
     <article
       v-for="nav in navBox"
       :key="`sidebar-nav-${nav.navId}`"
@@ -74,18 +74,13 @@ export default {
           navId: 'nav0003',
           navTitle: 'Util Component',
           gnbList: [
-            // {
-            //   menuId: 'nav0003-1',
-            //   menuNm: 'Accordian',
-            //   menuUrl: '/util/accordian',
-            // },
             {
-              menuId: 'nav0003-2',
+              menuId: 'nav0003-1',
               menuNm: 'Grid',
               menuUrl: '/util/grid',
             },
             {
-              menuId: 'nav0003-3',
+              menuId: 'nav0003-2',
               menuNm: 'Popup',
               menuUrl: '/util/popup',
             },
@@ -97,8 +92,8 @@ export default {
           gnbList: [
             {
               menuId: 'nav0004-1',
-              menuNm: 'Responsive',
-              menuUrl: '/layout/responsive',
+              menuNm: '반응형 웹',
+              menuUrl: '/layout/testgut',
             },
             {
               menuId: 'nav0004-2',

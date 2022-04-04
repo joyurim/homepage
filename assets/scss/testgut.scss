@@ -1,0 +1,59 @@
+.testgut {
+  &__inner {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .top-gnb {
+    height: 35px;
+    background: #3860a2;
+    ::v-deep.v-select {
+      color: white;
+      .vs__dropdown-toggle {
+        border-color: transparent;
+        background-color: transparent;
+      }
+      .vs__selected {
+        color: white;
+      }
+      .vs__actions {
+        &::before {
+          background-image: url('/img/testgut/icon__arrow-down-w.png');
+        }
+      }
+      &.vs--open {
+        .vs__actions {
+          &::before {
+            background-image: url('/img/testgut/icon__arrow-up-w.png');
+          }
+        }
+      }
+    }
+    &--right {
+      li {
+        @apply flex items-center;
+        color: white;
+        margin-right: 8px;
+        &::after {
+          content: '';
+          display: inline-block;
+          width: 1px;
+          height: 10px;
+          margin-left: 8px;
+          background: white;
+        }
+        &:last-child {
+          margin-right: 0;
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  header {
+    .logo {
+      margin: 0 auto;
+      padding-top: 50px;
+    }
+  }
+}
