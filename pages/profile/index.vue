@@ -140,19 +140,20 @@ export default {
         font-size: 33px;
         font-weight: bold;
         position: relative;
-        color: #fefefe;
-        &:nth-child(1) {
-          background-color: rgb(255, 142, 50);
-        }
-        &:nth-child(2) {
-          background-color: rgb(255, 225, 94);
-        }
-        &:nth-child(3) {
-          background-color: rgb(156, 224, 110);
-        }
-        &:nth-child(4) {
-          background-color: rgb(109, 189, 255);
-        }
+        color: $gray-70;
+        background-color: $gray-5;
+        // &:nth-child(1) {
+        //   background-color: rgb(255, 142, 50);
+        // }
+        // &:nth-child(2) {
+        //   background-color: rgb(255, 225, 94);
+        // }
+        // &:nth-child(3) {
+        //   background-color: rgb(156, 224, 110);
+        // }
+        // &:nth-child(4) {
+        //   background-color: rgb(109, 189, 255);
+        // }
       }
     }
     .pagination-wrapper {
