@@ -1,11 +1,87 @@
 <template>
-  <div class="container">
+  <section class="container ProfileInfo" aside aria-label="기본정보">
     <div class="section-wrapper">
-      <div class="section-container">
-        <div class="section">0</div>
-        <div class="section">1</div>
-        <div class="section">2</div>
-        <div class="section">3</div>
+      <div class="section-container profile">
+        <section class="section flex-col">
+          <div class="profile__img mb-16">
+            <img src="/img/profile/profile__main--img.png" alt="" />
+          </div>
+          <vue-typer
+            class="display-3 profile__info-text"
+            :text="[
+              '인생은 모두가 함께하는 여행이다.\n 매일매일 우리가 할 수 있는건 최선을 다해 이 멋진 여행을 만끽하는 것이다.',
+            ]"
+            :repeat="1"
+            initial-action="typing"
+            :pre-type-delay="100"
+            :type-delay="200"
+            :pre-erase-delay="1000"
+            :erase-delay="250"
+            erase-style="backspace"
+            :erase-on-complete="false"
+            caret-animation="blink"
+          ></vue-typer>
+        </section>
+        <section class="section">
+          <div class="flex flex-start mb-20">
+            <!-- 사진 -->
+            <article class="profile-img">
+              <img src="/img/yurim.jpg" alt="조유림" />
+              <!-- 연락처 -->
+              <ul class="profile__info">
+                <li>
+                  <p class="info__label">Email</p>
+                  <p>
+                    <a href="mailto:joyurim1989@naver.com"
+                      >joyurim1989@naver.com</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p class="info__label">Phone</p>
+                  <p>
+                    <a href="tel:+82-010-3754-6773">010-3754-6773</a>
+                  </p>
+                </li>
+              </ul>
+            </article>
+            <!-- 정보 -->
+            <article class="info">
+              <!-- 타이틀 -->
+              <div class="title mb-10">
+                <ul class="tag">
+                  <li># 기획</li>
+                  <li># 디자인</li>
+                  <li># 웹 퍼블리싱</li>
+                  <li># PL 경험 다수</li>
+                  <li># 10년차 직장인</li>
+                </ul>
+                <h2>
+                  <span class="point-color">Component Publishing이 가능한</span>
+                  UI/UX 실력자 <span class="point-color">조유림</span>입니다.
+                </h2>
+              </div>
+              <h3 class="sub-title">About Me</h3>
+              <div class="info__text">
+                <p class="mb-10">
+                  안녕하세요.<br />저는 10년차 기획자 겸 웹 퍼블리셔로<br />컴포넌트
+                  단위의 짜임세 있는 마크업을 지향합니다.
+                </p>
+                <p class="mb-10">
+                  웹디자이너에서 기획, 퍼블리싱까 다양한 분야에서의 경험으로<br />디자이너,
+                  개발자와 가깝게 일하면서 원할한 협업을 이끌어 내면서<br />최고의
+                  결과물을 만들기 위해 노력하고있습니다.<br />
+                </p>
+                <p class="">
+                  앞으로도 최고의 결과물을 만들기 위해 발전하는<br />UI/UX
+                  전문가가 되기 위하여 노력하겠습니다.<br />감사합니다.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section">1</section>
+        <section class="section">1</section>
       </div>
       <div class="pagination-wrapper">
         <div
@@ -17,7 +93,7 @@
         ></div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -121,6 +197,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   overflow: hidden;
+  max-width: 100%;
   * {
     transition: all 0.1s;
   }
@@ -162,6 +239,24 @@ export default {
         }
       }
     }
+  }
+}
+.profile {
+  &__img {
+    width: 250px;
+    &::after {
+      content: '';
+      display: block;
+      width: 250px;
+      height: 20px;
+      margin: 10px 0;
+      background: url(/img/profile/profile__triangle.png) no-repeat center
+        center / 40px;
+    }
+  }
+  &__info-text {
+    font-size: 16px;
+    text-align: center;
   }
 }
 </style>

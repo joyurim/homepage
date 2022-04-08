@@ -24,6 +24,7 @@ export default {
   plugins: [
     '~/plugins/vue-select',
     '~/plugins/vue-js-modal.js',
+    '~/plugins/vue-typer-plugin.js',
     { src: '~/plugins/dialog.js', ssr: false },
   ],
 
