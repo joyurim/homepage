@@ -6,10 +6,10 @@
 export default {
   name: 'IndexPage',
   layout() {
-    return 'default'
+    return 'blink'
   },
   mounted() {
-    this.$router.push('/profile/info')
+    this.$router.push('/profile')
   },
 }
 </script>

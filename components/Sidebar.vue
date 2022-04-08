@@ -34,13 +34,8 @@ export default {
           gnbList: [
             {
               menuId: 'nav0001-1',
-              menuNm: 'Info',
-              menuUrl: '/profile/info',
-            },
-            {
-              menuId: 'nav0001-2',
-              menuNm: 'Career',
-              menuUrl: '/profile/career',
+              menuNm: 'I`s me',
+              menuUrl: '/profile',
             },
           ],
         },
