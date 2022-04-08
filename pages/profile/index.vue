@@ -142,35 +142,23 @@ export default {
         position: relative;
         color: $gray-70;
         background-color: $gray-5;
-        // &:nth-child(1) {
-        //   background-color: rgb(255, 142, 50);
-        // }
-        // &:nth-child(2) {
-        //   background-color: rgb(255, 225, 94);
-        // }
-        // &:nth-child(3) {
-        //   background-color: rgb(156, 224, 110);
-        // }
-        // &:nth-child(4) {
-        //   background-color: rgb(109, 189, 255);
-        // }
       }
     }
     .pagination-wrapper {
       position: fixed;
-      left: 30px;
+      right: 30px;
       top: 50%;
       transform: translateY(-50%);
       .pagination {
         width: 14px;
         height: 14px;
-        border: 1px solid #fefefe;
+        border: 1px solid $blue-2;
         border-radius: 50%;
         & + .pagination {
           margin-top: 20px;
         }
         &.active {
-          background-color: #fefefe;
+          background-color: $primary60;
         }
       }
     }
