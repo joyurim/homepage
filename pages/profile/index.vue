@@ -242,21 +242,5 @@ export default {
   }
 }
 .profile {
-  &__img {
-    width: 250px;
-    &::after {
-      content: '';
-      display: block;
-      width: 250px;
-      height: 20px;
-      margin: 10px 0;
-      background: url(/img/profile/profile__triangle.png) no-repeat center
-        center / 40px;
-    }
-  }
-  &__info-text {
-    font-size: 16px;
-    text-align: center;
-  }
 }
 </style>
